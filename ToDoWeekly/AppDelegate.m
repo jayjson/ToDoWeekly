@@ -1,10 +1,3 @@
-//
-//  AppDelegate.m
-//  ToDoWeekly
-//
-//  Created by Jay Son on 2023-08-17.
-//
-
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
