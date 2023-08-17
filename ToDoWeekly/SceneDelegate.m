@@ -1,5 +1,7 @@
 #import "SceneDelegate.h"
 
+#import "ItemsViewController.h"
+
 @interface SceneDelegate ()
 
 @end
@@ -11,6 +13,14 @@
     // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
     // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+    CGRect bounds = [UIScreen mainScreen].bounds;
+    _window = [[UIWindow alloc] initWithFrame: bounds];
+    _window.windowScene = (UIWindowScene *)scene;
+    
+    ItemsViewController *itemsViewController = [[ItemsViewController alloc]initWithNibName:nil bundle:nil];
+    UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:itemsViewController];
+    [_window setRootViewController:navController];
+    [_window makeKeyAndVisible];
 }
 
 
