@@ -59,18 +59,34 @@
 		93C2520A2A8EC68B00821603 /* ToDoWeekly */ = {
 			isa = PBXGroup;
 			children = (
+				93C252242A8ECFF300821603 /* AppDelegate */,
+				93C252112A8EC68B00821603 /* ItemsViewController.h */,
+				93C252122A8EC68B00821603 /* ItemsViewController.m */,
+				93C2521D2A8EC68F00821603 /* main.m */,
+				93C252252A8ED01400821603 /* Resources */,
+			);
+			path = ToDoWeekly;
+			sourceTree = "<group>";
+		};
+		93C252242A8ECFF300821603 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
 				93C2520B2A8EC68B00821603 /* AppDelegate.h */,
 				93C2520C2A8EC68B00821603 /* AppDelegate.m */,
 				93C2520E2A8EC68B00821603 /* SceneDelegate.h */,
 				93C2520F2A8EC68B00821603 /* SceneDelegate.m */,
-				93C252112A8EC68B00821603 /* ItemsViewController.h */,
-				93C252122A8EC68B00821603 /* ItemsViewController.m */,
-				93C252172A8EC68F00821603 /* Assets.xcassets */,
-				93C252192A8EC68F00821603 /* LaunchScreen.storyboard */,
-				93C2521C2A8EC68F00821603 /* Info.plist */,
-				93C2521D2A8EC68F00821603 /* main.m */,
 			);
-			path = ToDoWeekly;
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		93C252252A8ED01400821603 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				93C252172A8EC68F00821603 /* Assets.xcassets */,
+				93C2521C2A8EC68F00821603 /* Info.plist */,
+				93C252192A8EC68F00821603 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
