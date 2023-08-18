@@ -26,7 +26,7 @@
 }
 
 - (void)configureNavBar {
-    self.navigationItem.title = @"My To Do's";
+    self.navigationItem.title = @"Remaining Tasks";
     UIImage *image = [UIImage systemImageNamed:@"plus"];
     UIBarButtonItem *plusBarButton = [[UIBarButtonItem alloc] initWithImage:image style:UIBarButtonItemStylePlain target:self action:@selector(handleTapOnPlusButton)];
     self.navigationItem.rightBarButtonItem = plusBarButton;
@@ -40,7 +40,11 @@
     }];
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil];
     UIAlertAction *saveAction = [UIAlertAction actionWithTitle:@"Save" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        // TODO: Handle save request
+        NSString *name = alertController.textFields[0].text;
+        Item *newItem = [[Item alloc] initWithName:name];
+        [self.items addObject:newItem];
+        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:self.items.count-1 inSection:0];
+        [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
     }];
     [alertController addAction:cancelAction];
     [alertController addAction:saveAction];
