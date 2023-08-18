@@ -13,6 +13,7 @@
 		93C252182A8EC68F00821603 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93C252172A8EC68F00821603 /* Assets.xcassets */; };
 		93C2521B2A8EC68F00821603 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93C252192A8EC68F00821603 /* LaunchScreen.storyboard */; };
 		93C2521E2A8EC68F00821603 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C2521D2A8EC68F00821603 /* main.m */; };
+		93C252292A8EEE7900821603 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C252282A8EEE7900821603 /* Item.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,8 @@
 		93C2521A2A8EC68F00821603 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93C2521C2A8EC68F00821603 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93C2521D2A8EC68F00821603 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		93C252282A8EEE7900821603 /* Item.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		93C2522A2A8EEE8A00821603 /* Item.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				93C252242A8ECFF300821603 /* AppDelegate */,
+				93C252262A8EEE5800821603 /* Items */,
 				93C252112A8EC68B00821603 /* ItemsViewController.h */,
 				93C252122A8EC68B00821603 /* ItemsViewController.m */,
 				93C2521D2A8EC68F00821603 /* main.m */,
@@ -87,6 +91,23 @@
 				93C252192A8EC68F00821603 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		93C252262A8EEE5800821603 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				93C252272A8EEE6600821603 /* Model */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		93C252272A8EEE6600821603 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				93C2522A2A8EEE8A00821603 /* Item.h */,
+				93C252282A8EEE7900821603 /* Item.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93C252292A8EEE7900821603 /* Item.m in Sources */,
 				93C252132A8EC68B00821603 /* ItemsViewController.m in Sources */,
 				93C2520D2A8EC68B00821603 /* AppDelegate.m in Sources */,
 				93C2521E2A8EC68F00821603 /* main.m in Sources */,
