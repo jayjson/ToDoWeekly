@@ -1,8 +1,11 @@
 #import "ItemsViewController.h"
 
-@interface ItemsViewController () <UITableViewDelegate, UITableViewDataSource>
+#import "Item.h"
+
+@interface ItemsViewController () <UITableViewDataSource>
 
 @property (strong, nonatomic) UITableView *tableView;
+@property NSMutableArray *items;
 
 @end
 
@@ -11,10 +14,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    NSArray *startingItems = [Item fetchItems];
+    self.items = [[NSMutableArray alloc] initWithArray:startingItems];
+    
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)
                                                   style:UITableViewStylePlain];
     self.tableView.dataSource = self;
-    self.tableView.delegate = self;
     [self.view addSubview:self.tableView];
     
     [self configureNavBar];
@@ -43,8 +48,9 @@
     [self presentViewController:alertController animated:true completion:nil];
 }
 
+#pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    return self.items.count;
 }
 
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
@@ -52,7 +58,9 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"itemCell"];
     }
-    cell.textLabel.text = @"Hell world";
+    Item *item = self.items[indexPath.row];
+    NSString *title = item.name;
+    cell.textLabel.text = title;
     return cell;
 }
 
