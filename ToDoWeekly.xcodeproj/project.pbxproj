@@ -62,33 +62,25 @@
 		93C2520A2A8EC68B00821603 /* ToDoWeekly */ = {
 			isa = PBXGroup;
 			children = (
-				93C252242A8ECFF300821603 /* AppDelegate */,
 				93C252262A8EEE5800821603 /* Items */,
-				93C2521D2A8EC68F00821603 /* main.m */,
-				93C252252A8ED01400821603 /* Resources */,
+				93C252252A8ED01400821603 /* Supporting Files */,
 			);
 			path = ToDoWeekly;
 			sourceTree = "<group>";
 		};
-		93C252242A8ECFF300821603 /* AppDelegate */ = {
+		93C252252A8ED01400821603 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				93C2520B2A8EC68B00821603 /* AppDelegate.h */,
 				93C2520C2A8EC68B00821603 /* AppDelegate.m */,
-				93C2520E2A8EC68B00821603 /* SceneDelegate.h */,
-				93C2520F2A8EC68B00821603 /* SceneDelegate.m */,
-			);
-			path = AppDelegate;
-			sourceTree = "<group>";
-		};
-		93C252252A8ED01400821603 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
 				93C252172A8EC68F00821603 /* Assets.xcassets */,
 				93C2521C2A8EC68F00821603 /* Info.plist */,
 				93C252192A8EC68F00821603 /* LaunchScreen.storyboard */,
+				93C2521D2A8EC68F00821603 /* main.m */,
+				93C2520E2A8EC68B00821603 /* SceneDelegate.h */,
+				93C2520F2A8EC68B00821603 /* SceneDelegate.m */,
 			);
-			path = Resources;
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		93C252262A8EEE5800821603 /* Items */ = {
@@ -327,7 +319,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ToDoWeekly/Resources/Info.plist;
+				INFOPLIST_FILE = "ToDoWeekly/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -353,7 +345,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ToDoWeekly/Resources/Info.plist;
+				INFOPLIST_FILE = "ToDoWeekly/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
