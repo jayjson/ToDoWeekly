@@ -64,8 +64,6 @@
 			children = (
 				93C252242A8ECFF300821603 /* AppDelegate */,
 				93C252262A8EEE5800821603 /* Items */,
-				93C252112A8EC68B00821603 /* ItemsViewController.h */,
-				93C252122A8EC68B00821603 /* ItemsViewController.m */,
 				93C2521D2A8EC68F00821603 /* main.m */,
 				93C252252A8ED01400821603 /* Resources */,
 			);
@@ -96,6 +94,7 @@
 		93C252262A8EEE5800821603 /* Items */ = {
 			isa = PBXGroup;
 			children = (
+				93C2522B2A8EF38C00821603 /* Controller */,
 				93C252272A8EEE6600821603 /* Model */,
 			);
 			path = Items;
@@ -108,6 +107,15 @@
 				93C252282A8EEE7900821603 /* Item.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		93C2522B2A8EF38C00821603 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				93C252112A8EC68B00821603 /* ItemsViewController.h */,
+				93C252122A8EC68B00821603 /* ItemsViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
