@@ -43,7 +43,7 @@
 }
 
 - (void)configureNavBar {
-    self.navigationItem.title = @"Remaining Tasks";
+    self.navigationItem.title = @"To Do This Week";
     UIImage *image = [UIImage systemImageNamed:@"plus"];
     UIBarButtonItem *plusBarButton = [[UIBarButtonItem alloc] initWithImage:image style:UIBarButtonItemStylePlain target:self action:@selector(handleTapOnPlusButton)];
     self.navigationItem.rightBarButtonItem = plusBarButton;
@@ -81,6 +81,9 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"itemCell"];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"itemCell"];
+    } else {
+        cell.textLabel.text = nil;
+        cell.accessoryType = UITableViewCellAccessoryNone;
     }
     Item *item = self.items[indexPath.row];
     NSString *title = [NSString stringWithFormat:@"Task No. %@: %@", item.id, item.title];

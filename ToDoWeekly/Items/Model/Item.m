@@ -17,7 +17,8 @@
     self.userId = dict[@"userId"];
     self.id = dict[@"id"];
     self.title = dict[@"title"];
-    self.completed = dict[@"completed"];
+    NSNumber *completedNumber = dict[@"completed"];
+    self.completed = [completedNumber boolValue];
     return self;
 }
 
