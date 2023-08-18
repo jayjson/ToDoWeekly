@@ -14,6 +14,7 @@
 		93C2521B2A8EC68F00821603 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93C252192A8EC68F00821603 /* LaunchScreen.storyboard */; };
 		93C2521E2A8EC68F00821603 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C2521D2A8EC68F00821603 /* main.m */; };
 		93C252292A8EEE7900821603 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C252282A8EEE7900821603 /* Item.m */; };
+		93C252312A8EF8A900821603 /* ItemsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C252302A8EF8A900821603 /* ItemsService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,8 @@
 		93C2521D2A8EC68F00821603 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		93C252282A8EEE7900821603 /* Item.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 		93C2522A2A8EEE8A00821603 /* Item.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		93C2522F2A8EF89500821603 /* ItemsService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemsService.h; sourceTree = "<group>"; };
+		93C252302A8EF8A900821603 /* ItemsService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemsService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,7 @@
 		93C252262A8EEE5800821603 /* Items */ = {
 			isa = PBXGroup;
 			children = (
+				93C2522E2A8EF88500821603 /* Service */,
 				93C2522B2A8EF38C00821603 /* Controller */,
 				93C252272A8EEE6600821603 /* Model */,
 			);
@@ -108,6 +112,15 @@
 				93C252122A8EC68B00821603 /* ItemsViewController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		93C2522E2A8EF88500821603 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				93C2522F2A8EF89500821603 /* ItemsService.h */,
+				93C252302A8EF8A900821603 /* ItemsService.m */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +196,7 @@
 				93C252132A8EC68B00821603 /* ItemsViewController.m in Sources */,
 				93C2520D2A8EC68B00821603 /* AppDelegate.m in Sources */,
 				93C2521E2A8EC68F00821603 /* main.m in Sources */,
+				93C252312A8EF8A900821603 /* ItemsService.m in Sources */,
 				93C252102A8EC68B00821603 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,9 +1,11 @@
 @interface Item : NSObject
 
-@property NSString *name;
+@property NSNumber *userId;
+@property NSNumber *id;
+@property NSString *title;
+@property BOOL completed;
 
-- (instancetype)initWithName: (NSString *)name;
-
-+ (NSArray *)fetchItems;
+- (instancetype)initWithNameAndId:(NSString *)name id:(NSNumber *)id;
+- (instancetype)initWithDictionary:(NSDictionary *)dict;
 
 @end

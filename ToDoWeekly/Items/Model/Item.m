@@ -4,19 +4,21 @@
 
 @implementation Item
 
-- (instancetype)initWithName:(NSString *)name {
+- (instancetype)initWithNameAndId:(NSString *)name id:(NSNumber *)id {
     if (self = [super init]) {
-        self.name = name;
+        self.title = name;
+        self.userId = @1;
+        self.id = id;
     }
     return self;
 }
 
-+ (NSArray *)fetchItems {
-    return @[
-        [[Item alloc] initWithName:@"Meditate"],
-        [[Item alloc] initWithName:@"Exercise"],
-        [[Item alloc] initWithName:@"Eat supplements"]
-    ];
+- (instancetype)initWithDictionary:(NSDictionary *)dict {
+    self.userId = dict[@"userId"];
+    self.id = dict[@"id"];
+    self.title = dict[@"title"];
+    self.completed = dict[@"completed"];
+    return self;
 }
 
 @end
